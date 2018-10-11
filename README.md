@@ -28,4 +28,7 @@ cd /path/to/drupal7/
 docker run --rm --name drupal7dewen1 --link mysql56local:mysql -p 8803:80  -v `pwd`:/var/www/html drupal7docker
 ```
 * Open the Drupal install page from browser and setup the site.
+```
+http://localhost:8803/
+```
 Pay attention to database host, should be `mysql56local`, dbuser: root, dbpassword: root, dbname: d7.
