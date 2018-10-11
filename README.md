@@ -25,5 +25,7 @@ docker exec mysql56local /usr/bin/mysql -uroot -proot -e "create database d7"
 * Start app container with mysql container linked from drupal directory.
 ```
 cd /path/to/drupal7/
-docker run --rm --name drupal7dewen1 --link mysql56local:mysql -p 8803:80  -v `pwd`:/var/www/html drupal7dewen
+docker run --rm --name drupal7dewen1 --link mysql56local:mysql -p 8803:80  -v `pwd`:/var/www/html drupal7docker
 ```
+* Open the Drupal install page from browser and setup the site.
+Pay attention to database host, should be `mysql56local`, dbuser: root, dbpassword: root, dbname: d7.
