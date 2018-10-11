@@ -32,3 +32,6 @@ docker run --rm --name drupal7dewen1 --link mysql56local:mysql -p 8803:80  -v `p
 http://localhost:8803/
 ```
 Pay attention to database host, should be `mysql56local`, dbuser: root, dbpassword: root, dbname: d7.
+
+# TODO
+* Add Drush support.
