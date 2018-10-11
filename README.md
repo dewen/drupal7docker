@@ -3,8 +3,8 @@ Docker file to create Drupal 7 environment image. Cloned from offical Drupal doc
 
 # Usage
 * Build image from Dockerfile
-** docker build -t drupal7docker .
+docker build -t drupal7docker .
 * Prepare the Drupal working dir.
-** mkdir /path/to/drupal7/
+mkdir /path/to/drupal7/
 * Start MySQL container
 * Start app container.
